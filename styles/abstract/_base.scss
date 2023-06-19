@@ -1,0 +1,9 @@
+@import './variaveis.scss';
+
+html, body{
+    font-family: $font;
+    scroll-behavior: smooth;
+    @media (max-width: 480px){
+        width: auto;
+    }
+}

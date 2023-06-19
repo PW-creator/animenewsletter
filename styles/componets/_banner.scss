@@ -1,0 +1,43 @@
+@import '../abstract/variaveis.scss';
+
+.banner{
+    background: url(../../imagens/ceu-do-por-do-sol-sobre-a-ia-geradora-de-montanha-laranja-amarelo-azul.jpg) 27% center no-repeat;
+    min-height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    .inner-banner{
+        padding: 3rem;
+        background-color: $cor-segundaria;
+        opacity: 0.9;
+        border-radius: 45px;
+        text-align: center;
+        h1{
+            font-size: $tamanho-do-texto;
+            color: $cor-primaria;
+        }
+        h2{
+            font-size: $tamanho-do-texto / 2;
+            color: $cor-primaria;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .inner-banner{
+            width: 250px;
+            h2{
+                font-size: $tamanho-do-texto /2.5;
+                margin-top: 1em;
+            }
+        }  
+    }
+
+    @media (max-width: 768px) and (min-width: 480px) {
+        .inner-banner{
+            width: 500px;
+        }
+    }
+}
+

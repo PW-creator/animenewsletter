@@ -1,0 +1,13 @@
+@import '../abstract/variaveis.scss';
+
+nav{
+    text-align: center;
+    padding: 0.5em;
+    a{
+        text-decoration: none;
+        color: $cor-primaria;
+    }
+    @media (max-width: 480px){
+        align-items: center;
+    }
+}
